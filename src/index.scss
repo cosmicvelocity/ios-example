@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
+}
+
+body {
+  font-feature-settings: "kern";
+  height: 100dvh;
+  margin: 0;
+  max-width: 100vw;
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 8px;
+  }
+}
+
+#root {
+  min-height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
